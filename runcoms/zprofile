@@ -47,6 +47,9 @@ path=(
   $path
 )
 
+export NVM_DIR="/Users/207302/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 #
 # Less
 #
