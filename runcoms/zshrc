@@ -13,3 +13,5 @@ fi
 # Customize to your needs...
 
 source /opt/nyt/sbx/.nyt
+
+export HOMEBREW_GITHUB_API_TOKEN=***REMOVED***
