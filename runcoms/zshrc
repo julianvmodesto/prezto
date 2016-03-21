@@ -19,4 +19,7 @@ export HOMEBREW_GITHUB_API_TOKEN=***REMOVED***
 # include locally installed Cassandra in PATH
 PATH="$PATH:$HOME/Applications/cassandra/bin"
 
+# include Datastax Opscenter for Apache Cassandra and Datastax Enterprise in PATH
+PATH="$PATH:$HOME/opscenter/bin"
+
 export GOPATH=$HOME/Code/golang
