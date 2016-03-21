@@ -18,3 +18,5 @@ export HOMEBREW_GITHUB_API_TOKEN=c3a33aae81cc53746a0a89437bbf83975feb7174
 
 # include locally installed Cassandra in PATH
 PATH="$PATH:$HOME/Applications/cassandra/bin"
+
+export GOPATH=$HOME/Code/golang
