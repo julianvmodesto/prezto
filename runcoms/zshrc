@@ -16,6 +16,9 @@ source /opt/nyt/sbx/.nyt
 
 export HOMEBREW_GITHUB_API_TOKEN=c3a33aae81cc53746a0a89437bbf83975feb7174
 
+# added by Anaconda2 2.5.0 installer
+export PATH="/Users/207302/anaconda/bin:$PATH"
+
 # include locally installed Cassandra in PATH
 PATH="$PATH:$HOME/Applications/cassandra/bin"
 
