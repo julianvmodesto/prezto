@@ -12,6 +12,8 @@ fi
 
 # Customize to your needs...
 
+export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+
 source /opt/nyt/sbx/.nyt
 
 export HOMEBREW_GITHUB_API_TOKEN=***REMOVED***
