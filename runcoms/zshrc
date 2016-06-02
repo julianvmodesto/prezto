@@ -26,3 +26,7 @@ PATH="$PATH:$HOME/Applications/cassandra/bin"
 PATH="$PATH:$HOME/opscenter/bin"
 
 export GOPATH=$HOME/Code/golang
+
+# enable iTerm shell integraiton
+source ~/.iterm2_shell_integration.`basename $SHELL`
+
