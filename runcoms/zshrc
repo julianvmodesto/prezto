@@ -36,3 +36,10 @@ source '/Users/207302/Applications/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/Users/207302/Applications/google-cloud-sdk/completion.zsh.inc'
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/"
+
+# Add Maven to PATH
+PATH="$PATH:/Users/207302/Applications/apache-maven-3.3.9/bin"
+
+export PATH="$PATH"
