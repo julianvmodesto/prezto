@@ -30,3 +30,9 @@ export GOPATH=$HOME/Code/golang
 # enable iTerm shell integraiton
 source ~/.iterm2_shell_integration.`basename $SHELL`
 
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/207302/Applications/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/207302/Applications/google-cloud-sdk/completion.zsh.inc'
