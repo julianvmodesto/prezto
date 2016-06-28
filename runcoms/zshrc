@@ -25,11 +25,14 @@ PATH="$PATH:$HOME/Applications/cassandra/bin"
 # include Datastax Opscenter for Apache Cassandra and Datastax Enterprise in PATH
 PATH="$PATH:$HOME/opscenter/bin"
 
-export GOPATH=$HOME/Code/golang
+export GOPATH="$HOME/Code/golang"
+PATH="$PATH:/usr/local/go/bin"
 
 # enable iTerm shell integraiton
 source ~/.iterm2_shell_integration.`basename $SHELL`
 
+# Add Google App Engine SDK for Java to PATH
+export PATH=$PATH:$HOME/Applications/appengine-java-sdk-1.9.38/bin/
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/207302/Applications/google-cloud-sdk/path.zsh.inc'
