@@ -20,19 +20,20 @@ export HOMEBREW_GITHUB_API_TOKEN=***REMOVED***
 export PATH="/Users/207302/anaconda/bin:$PATH"
 
 # include locally installed Cassandra in PATH
-PATH="$PATH:$HOME/Applications/cassandra/bin"
+export PATH="$PATH:$HOME/Applications/cassandra/bin"
 
 # include Datastax Opscenter for Apache Cassandra and Datastax Enterprise in PATH
-PATH="$PATH:$HOME/opscenter/bin"
+export PATH="$PATH:$HOME/opscenter/bin"
 
 export GOPATH="$HOME/Code/golang"
-PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:/usr/local/go/bin"
 
-# enable iTerm shell integraiton
+# enable iTerm shell integration
 source ~/.iterm2_shell_integration.`basename $SHELL`
 
 # Add Google App Engine SDK for Java to PATH
-export PATH=$PATH:$HOME/Applications/appengine-java-sdk-1.9.38/bin/
+export PATH="$PATH:$HOME/Applications/appengine-java-sdk-1.9.38/bin"
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/Users/207302/Applications/google-cloud-sdk/path.zsh.inc'
@@ -43,6 +44,7 @@ source '/Users/207302/Applications/google-cloud-sdk/completion.zsh.inc'
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/"
 
 # Add Maven to PATH
-PATH="$PATH:/Users/207302/Applications/apache-maven-3.3.9/bin"
+export PATH="$PATH:/Users/207302/Applications/apache-maven-3.3.9/bin"
 
-export PATH="$PATH"
+# Use neovim
+alias vim="nvim"
