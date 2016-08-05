@@ -13,3 +13,8 @@ fi
 # Customize to your needs...
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export HOMEBREW_GITHUB_API_TOKEN=c3a33aae81cc53746a0a89437bbf83975feb7174
+
+# Use neovim
+alias vim="nvim"
