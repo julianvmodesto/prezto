@@ -16,5 +16,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export HOMEBREW_GITHUB_API_TOKEN=***REMOVED***
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+
 # Use neovim
 alias vim="nvim"
