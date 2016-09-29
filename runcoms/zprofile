@@ -47,7 +47,7 @@ path=(
   $path
 )
 
-export NVM_DIR="/Users/207302/.nvm"
+export NVM_DIR="/Users/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 #
@@ -75,3 +75,6 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+export PATH=/Users/$USER/.cargo/bin:$PATH
+
