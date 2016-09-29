@@ -20,3 +20,15 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
 
 # Use neovim
 alias vim="nvim"
+
+# The next line updates PATH for the Google Cloud SDK.
+source "/Users/$USER/Applications/google-cloud-sdk/path.zsh.inc"
+
+# The next line enables shell command completion for gcloud.
+source "/Users/$USER/Applications/google-cloud-sdk/completion.zsh.inc"
+
+eval "$(thefuck --alias)"
+
+export GPG_TTY=tty
+export PINENTRY_USER_DATA="USE_CURSES=1"
+
