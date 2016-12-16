@@ -45,6 +45,7 @@ test -e ~/.iterm2_shell_integration.`basename $SHELL` && source ~/.iterm2_shell_
 
 eval "$(thefuck --alias)"
 
+source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/secrets"
 if [[ $HOME == '/Users/207302' ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/nyt"
   source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/nytsecrets"
