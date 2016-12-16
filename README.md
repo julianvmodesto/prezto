@@ -11,6 +11,8 @@ Installation
 Prezto will work with any recent release of Zsh, but the minimum required
 version is 4.3.17.
 
+Make sure git-crypt is installed, for sourcing secrets.
+
   1. Launch Zsh:
 
         zsh
@@ -18,6 +20,11 @@ version is 4.3.17.
   2. Clone the repository:
 
         git clone --recursive https://github.com/julianvmodesto/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+
+     Unlock secrets with git-crypt.
+
+        cd ~/.zprezto
+        git-crypt unlock
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
