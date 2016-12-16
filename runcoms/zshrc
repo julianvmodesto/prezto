@@ -41,7 +41,7 @@ source "$HOME/Applications/google-cloud-sdk/completion.zsh.inc"
 alias vim="nvim"
 
 # enable iTerm shell integration
-source ~/.iterm2_shell_integration.`basename $SHELL`
+test -e ~/.iterm2_shell_integration.`basename $SHELL` && source ~/.iterm2_shell_integration.`basename $SHELL`
 
 eval "$(thefuck --alias)"
 
@@ -49,4 +49,7 @@ if [[ $HOME == '/Users/207302' ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/nyt"
   source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/nytsecrets"
 fi
+
+export GPG_TTY=tty
+export PINENTRY_USER_DATA="USE_CURSES=1"
 
