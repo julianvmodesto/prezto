@@ -12,39 +12,41 @@ fi
 
 # Customize to your needs...
 
-source /opt/nyt/sbx/.nyt
+# Python
+export PATH="$HOME/anaconda/bin:$PATH"
 
-export HOMEBREW_GITHUB_API_TOKEN=***REMOVED***
-
-# added by Anaconda2 2.5.0 installer
-export PATH="/Users/207302/anaconda/bin:$PATH"
-
-# include locally installed Cassandra in PATH
-export PATH="$PATH:$HOME/Applications/cassandra/bin"
-
-# include Datastax Opscenter for Apache Cassandra and Datastax Enterprise in PATH
-export PATH="$PATH:$HOME/opscenter/bin"
-
+# Golang
 export GOPATH="$HOME/Code/golang"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/usr/local/go/bin"
 
-# enable iTerm shell integration
-source ~/.iterm2_shell_integration.`basename $SHELL`
+# Rust
+export PATH="$PATH:$HOME/.cargo/bin"
+
+# Java
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/"
+export PATH="$PATH:$HOME/Applications/apache-maven-3.3.9/bin"
+
+# Ruby
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Add Google App Engine SDK for Java to PATH
 export PATH="$PATH:$HOME/Applications/appengine-java-sdk-1.9.38/bin"
-
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/207302/Applications/google-cloud-sdk/path.zsh.inc'
-
+source "$HOME/Applications/google-cloud-sdk/path.zsh.inc"
 # The next line enables shell command completion for gcloud.
-source '/Users/207302/Applications/google-cloud-sdk/completion.zsh.inc'
-
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/"
-
-# Add Maven to PATH
-export PATH="$PATH:/Users/207302/Applications/apache-maven-3.3.9/bin"
+source "$HOME/Applications/google-cloud-sdk/completion.zsh.inc"
 
 # Use neovim
 alias vim="nvim"
+
+# enable iTerm shell integration
+source ~/.iterm2_shell_integration.`basename $SHELL`
+
+eval "$(thefuck --alias)"
+
+if [[ $HOME == '/Users/207302' ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/nyt"
+  source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/nytsecrets"
+fi
+

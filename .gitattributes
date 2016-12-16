@@ -1,0 +1,3 @@
+runcoms/nytsecrets filter=git-crypt diff=git-crypt
+runcoms/secrets filter=git-crypt diff=git-crypt
+
