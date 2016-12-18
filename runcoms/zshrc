@@ -12,22 +12,44 @@ fi
 
 # Customize to your needs...
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# Python
+export PATH="$HOME/anaconda/bin:$PATH"
 
-export HOMEBREW_GITHUB_API_TOKEN=c3a33aae81cc53746a0a89437bbf83975feb7174
+# Golang
+export GOPATH="$HOME/Code/golang"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:/usr/local/go/bin"
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home
+# Rust
+export PATH="$PATH:$HOME/.cargo/bin"
+
+# Java
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/"
+export PATH="$PATH:$HOME/Applications/apache-maven-3.3.9/bin"
+
+# Ruby
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Add Google App Engine SDK for Java to PATH
+export PATH="$PATH:$HOME/Applications/appengine-java-sdk-1.9.38/bin"
+# The next line updates PATH for the Google Cloud SDK.
+source "$HOME/Applications/google-cloud-sdk/path.zsh.inc"
+# The next line enables shell command completion for gcloud.
+source "$HOME/Applications/google-cloud-sdk/completion.zsh.inc"
 
 # Use neovim
 alias vim="nvim"
 
-# The next line updates PATH for the Google Cloud SDK.
-source "/Users/$USER/Applications/google-cloud-sdk/path.zsh.inc"
-
-# The next line enables shell command completion for gcloud.
-source "/Users/$USER/Applications/google-cloud-sdk/completion.zsh.inc"
+# enable iTerm shell integration
+test -e ~/.iterm2_shell_integration.`basename $SHELL` && source ~/.iterm2_shell_integration.`basename $SHELL`
 
 eval "$(thefuck --alias)"
+
+source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/secrets"
+if [[ $HOME == '/Users/207302' ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/nyt"
+  source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/nytsecrets"
+fi
 
 export GPG_TTY=tty
 export PINENTRY_USER_DATA="USE_CURSES=1"
