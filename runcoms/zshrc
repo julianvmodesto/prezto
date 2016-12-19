@@ -17,7 +17,8 @@ export PATH="$HOME/anaconda/bin:$PATH"
 
 # Golang
 export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH/bin"
+export GOBIN="$GOPATH/bin"
+export PATH="$PATH:$GOBIN"
 export PATH="$PATH:/usr/local/go/bin"
 
 # Rust
