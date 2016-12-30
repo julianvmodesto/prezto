@@ -23,6 +23,8 @@ export PATH="$PATH:/usr/local/go/bin"
 
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
+# For rustup zsh completions
+fpath+=~/.zfunc
 
 # Java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/"
