@@ -40,6 +40,12 @@ Make sure git-crypt is installed, for sourcing secrets.
 
   5. Open a new Zsh terminal window or tab.
 
+### Post-Installation
+
+Prezto comes with an ssh module, so ssh-agent is run automatically.
+
+Run `ssh-add -K <path/to/identity>` to persist through sessions.
+
 ### Troubleshooting
 
 If you are not able to find certain commands after switching to *Prezto*,
