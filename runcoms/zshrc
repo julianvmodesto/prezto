@@ -12,6 +12,10 @@ fi
 
 # Customize to your needs...
 
+if ssh-add -l 2>&1 | grep -q 'The agent has no identities'; then
+  ssh-add -A 2> /dev/null
+fi
+
 # Python
 export PATH="$HOME/anaconda/bin:$PATH"
 
