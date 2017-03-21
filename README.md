@@ -44,7 +44,8 @@ Make sure git-crypt is installed, for sourcing secrets.
 
 Prezto comes with an ssh module, so ssh-agent is run automatically.
 
-Run `ssh-add -K <path/to/identity>` to persist through sessions.
+Run `ssh-add -K <path/to/identity>` to persist through sessions and logout or
+reboot.
 
 ### Troubleshooting
 
