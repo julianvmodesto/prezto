@@ -1,9 +1,0 @@
-
-source /opt/nyt/sbx/.nyt
-
-# include locally installed Cassandra in PATH
-export PATH="$PATH:$HOME/Applications/cassandra/bin"
-
-# include Datastax Opscenter for Apache Cassandra and Datastax Enterprise in PATH
-export PATH="$PATH:$HOME/opscenter/bin"
-
